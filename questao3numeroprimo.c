@@ -6,7 +6,7 @@ void Menu (){
 printf("!!!MENU!!!\n");
 printf("1 : Cálculo de fatorial\n");
 printf("2 : Verificação número primo\n");
-printf("2 - 9 :Reexibir Menu\n");
+printf("3 - 9 :Reexibir Menu\n");
 printf("0 -: Terminar execução\n");
 }
 
