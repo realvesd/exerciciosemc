@@ -62,9 +62,11 @@ while(loop ==1) {
         scanf("%d", &opcao);
         break;
       case 5:
-        printf("5 : Cálculo de raiz\nInforme um número:");
-        scanf("%d", &numero);
-        Raiz(numero);
+        printf("5 : Cálculo de raiz\nInforme um número para calcular sua raiz:");
+        scanf("%f", &num1);
+        printf("Agora informe um número para ser o expoente da raiz: ");
+        scanf("%i", &numero);
+        Raiz(num1,numero);
         Menu();
         scanf("%d", &opcao);
         break;
