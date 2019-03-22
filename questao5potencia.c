@@ -19,7 +19,7 @@ float a, resposta;
 
 resposta = pow(a,b);
 
-printf("A potência de A elevado a B é igual a:%f\n", resposta);
+printf("A potência de %f elevado a %d é igual a:%.2e\n",a, b, resposta);
 
 }
 int main(void) {
