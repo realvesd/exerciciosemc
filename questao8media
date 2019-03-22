@@ -1,0 +1,114 @@
+#include <stdio.h>
+#include <math.h>
+//MENU
+void Menu (){
+
+printf("!!!MENU!!!\n");
+printf("1 : Cálculo de fatorial\n");
+printf("2 : Verificação número primo\n");
+printf("3 : Encontrar números primos\n");
+printf("4 : Cálculo de potência\n");
+printf("5 : Cálculo de raiz\n:");
+printf("6 : Verificar se ano é bissexto\n:");
+printf("Calcular média\n:");
+printf("8 - 9 :Reexibir Menu\n");
+printf("0 -: Terminar execução\n");
+}
+
+//MEDIA
+void media(int n, int m){
+  float media;
+  media = (n+m)/2;
+  printf("A média das notas é igual a %.2f!\n",media);
+}
+
+int main(void) {
+
+  int opcao, loop =1;
+  int numero, expoente;
+  float base;
+Menu();
+scanf("%i", &opcao);
+
+while(loop ==1) {
+    switch (opcao) {
+      case 1:
+        printf("1:  Cálculo de fatorial\nInforme o valor para calcular o fatorial:");
+        scanf("%i", &numero);
+        Fatorial(numero);
+        Menu();
+        break;
+      case 2:
+        printf("2 : Verificação número primo\nInforme um número:");
+        scanf("%d", &numero);
+        Primo(numero);
+        Menu();
+        scanf("%d", &opcao);
+        break;
+      case 3:
+        while (numero !=0) {
+          printf("3 : Encontrar números primos\nInforme um número:");
+          scanf("%d", &numero);
+          Primo(numero);
+          Menu();
+          scanf("%d", &opcao);
+        }
+        break;
+      case 4:
+          printf("4 : Cálculo de potência\nInforme um número como base :");
+          scanf("%f", &base);
+          printf("Informe um número para servir como expoente: ");
+          scanf("%i", &numero);
+          Potencia(base,numero);
+          Menu();
+          scanf("%i", &opcao);
+        break;
+      case 5:
+        printf("5 : Cálculo de raiz\nInforme um número para calcular sua raiz:");
+        scanf("%f", &num1);
+        printf("Agora informe um número para ser o expoente da raiz: ");
+        scanf("%i", &numero);
+        Raiz(num1,numero);
+        Menu();
+        scanf("%d", &opcao);
+        break;
+      case 6:
+        printf("6 : Verificar se ano é bissexto\nInforme um ano:");
+        scanf("%d", &numero);
+        Bissexto(numero);
+        Menu();
+        scanf("%d", &opcao);
+        break;
+      case 7:
+        printf("7 : Calcular média\nInforme a primeira nota:");
+        scanf("%f", &nota1);
+        printf("Agora informe a segunda nota: ");
+        scanf("%f", &nota2);
+        if((nota1 >= 0 && nota1 <= 10) && (nota2 >= 0.0 && nota2 <= 10){
+          Media(numeroA,numeroB);
+          Menu();
+          scanf("%d", &opcao);
+        }
+          break;
+      case 8:
+      case 9:
+        Menu();
+        scanf("%d", &opcao);
+        break;
+      case 0:
+      printf("Programa encerrado!\n");
+      loop = 0;
+        break;
+      default:
+        printf("Opção não existe, tente novamente: ");
+        Menu();
+        scanf("%i", &opcao);
+        break;
+
+
+
+    }
+}
+
+  return 0;
+}
