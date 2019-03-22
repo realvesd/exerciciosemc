@@ -54,11 +54,13 @@ while(loop ==1) {
         }
         break;
       case 4:
-        printf("4 : Cálculo de potência\nInforme um número:");
-        scanf("%d", &numero);
-        Potencia(numero);
+        printf("4 : Cálculo de potência\nInforme um número como base :");
+        scanf("%f", &base);
+        printf("Informe um número para servir como expoente: ");
+        scanf("%i", &expoente)
+        Potencia(base,expoente);
         Menu();
-        scanf("%d", &opcao);
+        scanf("%i", &opcao);
         break;
       case 5:
       case 6:
