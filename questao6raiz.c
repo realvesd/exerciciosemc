@@ -9,7 +9,7 @@ printf("2 : Verificação número primo\n");
 printf("3 : Encontrar números primos\n");
 printf("4 : Cálculo de potência\n");
 printf("5 : Cálculo de raiz\n:");
-printf("2 - 9 :Reexibir Menu\n");
+printf("6 - 9 :Reexibir Menu\n");
 printf("0 -: Terminar execução\n");
 }
 
